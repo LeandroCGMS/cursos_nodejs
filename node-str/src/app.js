@@ -17,6 +17,4 @@ const productRoute = require('./routes/product-route.js');
 app.use('/', indexRoute);
 app.use('/products', productRoute);
 
-
-
 module.exports = app;
