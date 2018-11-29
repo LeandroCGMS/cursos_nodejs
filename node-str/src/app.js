@@ -2,9 +2,13 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const app = express();
 const router = express.Router();
+
+//conecta ao banco
+mongoose.connect('mongodb://leandro:senhaFacil123@ds038888.mlab.com:38888/ndstr');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
