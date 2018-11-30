@@ -13,6 +13,9 @@ mongoose.connect('mongodb://leandro:senhaFacil123@ds038888.mlab.com:38888/ndstr'
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// Carrega os Models
+const Product = require('./models/product');
+
 
 //Carrega as Rotas
 const indexRoute = require('./routes/index-route.js');

@@ -12,7 +12,7 @@ const schema = new Schema({
     }, 
     slug: { // Cadeira Gamer = cadeira-gamer
         type: String,
-        required: true,
+        required: [true, 'O slug é obrigatório.'],
         trim: true,
         index: true,
         unique: true
