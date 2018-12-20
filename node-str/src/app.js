@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Carrega os Models
 const Product = require('./models/product');
+const Customer = require('./models/customer');
 
 
 //Carrega as Rotas
